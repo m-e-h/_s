@@ -10,7 +10,8 @@
     "css-fix": "stylelint style.css --fix",
     "scss-lint": "stylelint sass/**/*.scss",
     "js-lint": "eslint js/**",
-    "js-fix": "eslint js/** --fix"
+    "js-fix": "eslint js/** --fix",
+    "test": "npm run css-lint && npm run js-lint"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -24,7 +25,6 @@
     "stylelint-config-wordpress": "^11.0.0"
   },
   "stylelint": {
-    "defaultSeverity": "warning",
     "extends": "stylelint-config-wordpress",
     "rules": {
       "max-line-length": [ 80, {
